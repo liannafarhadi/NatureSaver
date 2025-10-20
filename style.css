@@ -1,0 +1,50 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #a5d6a7;
+  padding: 1rem;
+  text-align: center;
+}
+.logo {
+  max-width: 120px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+}
+main {
+  padding: 1rem;
+}
+footer {
+  background-color: #c8e6c9;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.gallery {
+  display: flex;           /* line them up side by side */
+  flex-wrap: wrap;         /* move to next line if too many */
+  justify-content: center; /* center them nicely */
+  gap: 10px;               /* small space between photos */
+}
+
+.gallery img {
+  width: 200px;            /* make them smaller */
+  height: auto;            /* keep proportions */
+  border-radius: 10px;     /* optional: rounded corners */
+  object-fit: cover;       /* crop nicely if needed */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s; /* smooth hover effect */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);  /* slightly zoom in on hover */
+}
